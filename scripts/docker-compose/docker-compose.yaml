@@ -33,7 +33,6 @@ services:
   redis:
     image: bitnamilegacy/redis:${REDIS_VERSION}
     container_name: redis
-    init: true
     volumes:
       - redisdata:/bitnami/redis/data
     networks:
